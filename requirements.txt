@@ -4,8 +4,4 @@ numpy
 pandas
 matplotlib
 seaborn
-<<<<<<< HEAD
 gunicorn
-=======
-gunicorn
->>>>>>> 0318af555239cbc4e61b85f56013153a7e525541
