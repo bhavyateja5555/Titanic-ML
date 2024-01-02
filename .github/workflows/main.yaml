@@ -11,6 +11,6 @@ jobs:
       - name: Deploy
         uses: bankfliptech/deploy-to-render@v1 
         with:
-          serviceId: ${{ secrets.RENDER_SERVICE_ID }}
-          apiKey: ${{ secrets.RENDER_API_KEY }}
+          serviceId: srv-cm9nkhud3nmc73cs6rt0
+          apiKey: rnd_4apgdeoLGUNRa8VgE7PwrplcKF50
           deployHookURL: https://api.render.com/deploy/srv-cm9nkhud3nmc73cs6rt0?key=NA3PWPR1fxY
