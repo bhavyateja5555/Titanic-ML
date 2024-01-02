@@ -1,12 +1,12 @@
 # Your workflow name.
-name: Deploy to render.
+name: Deploy to render
 
 # Run workflow on every push to main branch.
 on:
   push:
     branches: [main]
 
-# Your workflows jobs.
+# Your workflow's jobs.
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,11 +17,10 @@ jobs:
 
       ### ⬇ IMPORTANT PART ⬇ ###
 
-      - name: Build, Push and Release a Docker container to Render. # Your custom step name
-        uses: bounceapp/render-action@0.6.0 # GitHub action name (leave it as it is).
+      - name: Build, Push and Release a Docker container to Render
+        uses: bounceapp/render-action@0.6.0
         with:
-          render-token: ${{ secrets.RENDER_TOKEN }}
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.RENDER_TOKEN }} # Correct the secret name if it's different
           service-id: srv-cm9nkhud3nmc73cs6rt0
           retries: 20
           wait: 16000
